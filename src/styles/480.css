@@ -1,0 +1,27 @@
+@media screen and (max-width: 480px) {
+  #container {
+    width: 96% !important;
+    height: 90vh !important;
+  }
+
+  #chart {
+    padding-left: 0 !important;
+  }
+
+  #recordList {
+    margin-top: 3rem;
+    padding-right: 0 !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  li {
+    font-size: 1.2rem !important;
+  }
+
+  table {
+    font-size: 1.2rem !important;
+  }
+}

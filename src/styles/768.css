@@ -1,0 +1,31 @@
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .App {
+    height: 100vh !important;
+  }
+
+  #container {
+    max-width: 80% !important;
+    height: 86vh !important;
+  }
+
+  #chart {
+    padding-left: 0 !important;
+  }
+
+  #recordList {
+    margin-top: 4rem;
+    padding-right: 0 !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  li {
+    font-size: 1.2rem !important;
+  }
+
+  table {
+    font-size: 1.2rem !important;
+  }
+}

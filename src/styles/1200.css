@@ -1,0 +1,17 @@
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  #container {
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+
+  li {
+    font-size: 1.2rem !important;
+  }
+
+  table {
+    font-size: 1.2rem !important;
+  }
+}
