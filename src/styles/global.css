@@ -130,6 +130,7 @@ li {
 #container-chart-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
+  padding-bottom: 2rem;
 }
 
 #chart {
