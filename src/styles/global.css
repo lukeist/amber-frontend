@@ -111,10 +111,10 @@ li {
   border-radius: 1rem;
   width: 90%;
   max-width: 110rem;
-  height: 54vh;
   box-shadow: var(--boxshadow05);
   transition: all ease 0.3s;
   z-index: 1;
+  padding-bottom: 5rem;
 }
 
 #container:hover {
@@ -130,7 +130,6 @@ li {
 #container-chart-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(34rem, 1fr));
-  padding-bottom: 2rem;
 }
 
 #chart {
@@ -150,6 +149,8 @@ li {
 }
 
 #recordList {
+}
+#record {
   width: 100%;
   padding-right: 1rem;
   display: flex;
@@ -158,7 +159,7 @@ li {
 }
 
 #recordList h2 {
-  text-align: left;
+  padding-left: 1rem;
 }
 
 table {

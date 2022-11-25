@@ -1,7 +1,6 @@
 @media screen and (max-width: 480px) {
   #container {
     width: 96% !important;
-    height: 90vh !important;
   }
 
   #chart {
@@ -10,6 +9,9 @@
 
   #recordList {
     margin-top: 3rem;
+  }
+
+  #record {
     padding-right: 0 !important;
   }
 

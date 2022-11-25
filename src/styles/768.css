@@ -1,11 +1,6 @@
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .App {
-    height: 100vh !important;
-  }
-
   #container {
     max-width: 80% !important;
-    height: 86vh !important;
   }
 
   #chart {
@@ -14,6 +9,9 @@
 
   #recordList {
     margin-top: 4rem;
+  }
+
+  #record {
     padding-right: 0 !important;
   }
 

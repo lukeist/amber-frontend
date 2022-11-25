@@ -1,5 +1,3 @@
-import { useSelector } from "react-redux";
-
 const Record = ({ record, length }) => (
   <tr>
     <td className="td-year">{record.year}</td>
@@ -40,17 +38,19 @@ export default function RecordList({ instructors }) {
   return (
     <div id="recordList">
       <h2>{instructors[0].course}</h2>
-      <table className="table table-striped">
-        <thead>
-          <tr id="tr-header">
-            <th>Year</th>
-            <th>Course</th>
-            <th>Instructor</th>
-            <th className="col-last">Student</th>
-          </tr>
-        </thead>
-        <tbody>{recordList(instructors)}</tbody>
-      </table>
+      <div id="record">
+        <table className="table table-striped">
+          <thead>
+            <tr id="tr-header">
+              <th>Year</th>
+              <th>Course</th>
+              <th>Instructor</th>
+              <th className="col-last">Student</th>
+            </tr>
+          </thead>
+          <tbody>{recordList(instructors)}</tbody>
+        </table>
+      </div>
     </div>
   );
 }
