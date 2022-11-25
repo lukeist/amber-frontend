@@ -35,6 +35,7 @@ body {
   align-items: center;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 #gradient-animator {
@@ -149,8 +150,6 @@ li {
 }
 
 #recordList {
-}
-#record {
   width: 100%;
   padding-right: 1rem;
   display: flex;
@@ -158,8 +157,9 @@ li {
   align-items: center;
 }
 
-#recordList h2 {
-  padding-left: 1rem;
+#recordList caption {
+  text-align: left;
+  padding: 0 0 1rem 1rem;
 }
 
 table {
