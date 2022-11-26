@@ -23,4 +23,16 @@
   table {
     font-size: 1.2rem !important;
   }
+
+  .wo-grid {
+    max-height: 50rem;
+  }
+
+  .w-grid {
+    max-height: 100vh;
+  }
+
+  .chart-center {
+    transform: translateX(0%) !important;
+  }
 }

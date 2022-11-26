@@ -1,5 +1,23 @@
+const { motion } = require("framer-motion");
+
+const grid = {
+  hidden: { opacity: 0, scale: 0.8 },
+  show: { opacity: 1, scale: 1 },
+};
+
+const grids = {
+  hidden: { opacity: 1 },
+  show: {
+    opacity: 1,
+    transition: {
+      delayChildren: 0.4,
+      staggerChildren: 0.1,
+    },
+  },
+};
+
 const Record = ({ record, length }) => (
-  <tr>
+  <motion.tr variants={grid}>
     <td className="td-year">{record.year}</td>
     <td className="td-course">{record.course}</td>
     <td>{record.instructor}</td>
@@ -25,7 +43,7 @@ const Record = ({ record, length }) => (
       Delete
     </button>
   </td> */}
-  </tr>
+  </motion.tr>
 );
 
 export default function RecordList({ instructors }) {
@@ -36,22 +54,27 @@ export default function RecordList({ instructors }) {
   }
 
   return (
-    <div id="recordList">
+    <motion.div
+      variants={grids}
+      animate="show"
+      initial="hidden"
+      id="recordList"
+    >
       <table className="table table-striped">
-        <caption>
+        <motion.caption variants={grid}>
           <h2>{instructors[0].course}</h2>
-        </caption>
+        </motion.caption>
 
         <thead>
-          <tr id="tr-header">
-            <th>Year</th>
+          <motion.tr variants={grid} id="tr-header">
+            <th className="td-year">Year</th>
             <th>Course</th>
             <th>Instructor</th>
             <th className="col-last">Student</th>
-          </tr>
+          </motion.tr>
         </thead>
         <tbody>{recordList(instructors)}</tbody>
       </table>
-    </div>
+    </motion.div>
   );
 }

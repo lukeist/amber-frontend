@@ -13,6 +13,7 @@ function App() {
   const { instructors } = useSelector((state) => state.records);
   const dispatch = useDispatch();
   const [years, setYears] = useState([]);
+  const isGrid = instructors.length;
 
   // This method fetches the records from the database.
   useEffect(() => {
@@ -57,17 +58,13 @@ function App() {
           </div>
         </div>
       ) : (
-        <div id="container">
+        <div id="container" className={isGrid ? "w-grid" : "wo-grid"}>
           <h3>{records.chartTitle}</h3>
           <Radio years={years} />
           <div>
             <div id="container-chart-grid">
-              <Chart records={records} />
-              {instructors.length ? (
-                <RecordList instructors={instructors} />
-              ) : (
-                ""
-              )}
+              <Chart isGrid={isGrid} records={records} />
+              {isGrid ? <RecordList instructors={instructors} /> : <div></div>}
             </div>
           </div>
         </div>

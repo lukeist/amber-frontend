@@ -23,4 +23,29 @@
   table {
     font-size: 1.2rem !important;
   }
+
+  .wo-grid {
+    max-height: 50rem;
+  }
+
+  .w-grid {
+    max-height: 100vh;
+  }
+
+  th,
+  td {
+    padding: 0.5rem 0.5rem !important;
+  }
+
+  .td-year {
+    width: 4rem !important;
+  }
+
+  .td-course {
+    width: 17rem !important;
+  }
+
+  .chart-center {
+    transform: translateX(0%) !important;
+  }
 }
