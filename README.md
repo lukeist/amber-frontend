@@ -2,6 +2,8 @@
 
 Link to project (hosted by AWS Amplify) https://main.d1w65l1v6fcr36.amplifyapp.com/
 
+Link to the frontend's repo: https://github.com/hiluan/amber-frontend/
+
 Link to the backend's repo: https://github.com/hiluan/amber-backend/
 
 ## How It's Made:
@@ -22,3 +24,4 @@ safsdfsdfas
 - Heroku: This cloud platform is used for hosting the backend. The free tier ended on Nov 28, 2022.
 
 ## How It Works:
+*to be continued*
