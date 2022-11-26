@@ -16,8 +16,10 @@ export default function Radio({ years }) {
 
   const switchRadio = (data, year, course) => {
     const students = new Students(data);
+    // This stores the current year to the state
     dispatch(pushChartYear(year));
-    typeof year === "number"
+    // This stores the selected year to the state and displays it to the screen
+    typeof year === "number" // This means if year === 'All' || 2015
       ? dispatch(pushChartYear(year)) &&
         dispatch(pushChartTitle(`Students by Course ${year}`)) &&
         dispatch(pushCourses(students.byCourse(year))) &&

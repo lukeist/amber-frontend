@@ -38,7 +38,7 @@ export default function Chart({ records, isGrid }) {
     dispatch(pushInstructors(students.byInstructor(year, course)));
   };
 
-  // mobile has different animation style
+  // Mobile has different animation style
   const isMobile = window.innerWidth <= 768;
 
   return (
@@ -81,6 +81,5 @@ export default function Chart({ records, isGrid }) {
         </PieChart>
       </ResponsiveContainer>
     </div>
-    // </motion.div>
   );
 }

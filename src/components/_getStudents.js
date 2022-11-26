@@ -1,8 +1,9 @@
 class Students {
-  constructor(records) {
-    this.records = records;
+  constructor(data) {
+    this.data = data;
   }
 
+  // This gets the total number of students in all or any years.
   _totalStudent(hash) {
     let total = 0;
     for (let key in hash) {
@@ -11,6 +12,7 @@ class Students {
     return total;
   }
 
+  // This gets decimals for percentage calculation.
   _getDecimal(num) {
     return Math.round((num + Number.EPSILON) * 10000) / 100;
   }
@@ -18,7 +20,7 @@ class Students {
   // This filters the number of students of all years by course.
   all() {
     const hash = {};
-    for (let r of this.records) {
+    for (let r of this.data) {
       hash[r.course] = (hash[r.course] || 0) + 1;
     }
     const total = this._totalStudent(hash);
@@ -36,7 +38,7 @@ class Students {
   // This filters the number of students by year && course.
   byCourse(year) {
     const hash = {};
-    for (let r of this.records) {
+    for (let r of this.data) {
       r.year === year && (hash[r.course] = (hash[r.course] || 0) + 1);
     }
     const total = this._totalStudent(hash);
@@ -56,20 +58,19 @@ class Students {
     const hash = {};
     let totalStudents = 0;
     if (typeof year === "number") {
-      for (let r of this.records) {
+      for (let r of this.data) {
         r.year === year &&
           r.course === course &&
           (hash[r.instructor] = (hash[r.instructor] || 0) + 1) &&
           totalStudents++;
       }
     } else {
-      for (let r of this.records) {
+      for (let r of this.data) {
         r.course === course &&
           (hash[r.instructor] = (hash[r.instructor] || 0) + 1) &&
           totalStudents++;
       }
     }
-
     const instructors = [];
     for (let instructor in hash) {
       instructors.push({

@@ -18,17 +18,19 @@ function App() {
   // This method fetches the records from the database.
   useEffect(() => {
     async function getRecords() {
+      // Fetching data
       const response = await fetch(`${process.env.REACT_APP_AMBER_API}`);
-
       if (!response.ok) {
         const message = `An error occurred: ${response.statusText}`;
         window.alert(message);
         return;
       }
-
       const newRecords = await response.json();
       const students = new Students(newRecords);
+      console.log(newRecords);
+      // This dispatches the whole data to keep for later use
       dispatch(pushDb(newRecords));
+      // This dispatches the values for the current chart and grid
       dispatch(active(true));
       dispatch(pushCourses(students.all()));
 
@@ -43,7 +45,7 @@ function App() {
     getRecords();
 
     return;
-  }, [records.length]);
+  }, []);
 
   return (
     <div className="App">

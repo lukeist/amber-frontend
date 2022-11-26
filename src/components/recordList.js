@@ -1,10 +1,9 @@
+// Framer Motion variants
 const { motion } = require("framer-motion");
-
 const grid = {
   hidden: { opacity: 0, scale: 0.8 },
   show: { opacity: 1, scale: 1 },
 };
-
 const grids = {
   hidden: { opacity: 1 },
   show: {
@@ -16,6 +15,7 @@ const grids = {
   },
 };
 
+// This shows grid items on the screen
 const Record = ({ record, length }) => (
   <motion.tr variants={grid}>
     <td className="td-year">{record.year}</td>
