@@ -27,7 +27,6 @@ function App() {
       }
       const newRecords = await response.json();
       const students = new Students(newRecords);
-      console.log(newRecords);
       // This dispatches the whole data to keep for later use
       dispatch(pushDb(newRecords));
       // This dispatches the values for the current chart and grid
