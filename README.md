@@ -101,10 +101,10 @@ _Data Grid and Pie Chart_
 
 ## Optimizations
 
-All methods from class `Students` are O(n) of time complexity since I had to traverse through the whole dataset to get all the info I needed. I used Hashmaps and arrays there to make sure the app run with O(1) of space complexity. Yet the app has O(n) of space complexity due to storing the whole dataset in the global state via Redux. The combination of both is acceptable performance.
+All methods from class `Students` are O(n) of time complexity since I had to traverse through the whole dataset to get all the info I needed. I used Hashmaps and arrays there to make sure the app run with O(1) of space complexity. Yet the app has O(n) of space complexity due to storing the whole dataset in the global state via Redux. The combination of both is an acceptable performance.
 
 The array `colors` in `chart.js` needs to be a method that automatically generates more colors following the number of years in the dataset.
 
 ## Lessons Learned
 
-I shouldn't show the younglings at my grandmom's Thanksgiving party some 'awesome color-changing animation' if I wanted to finish the assessment sooner.
+I shouldn't have shown the younglings at my grandmom's Thanksgiving party some 'awesome color-changing animation' if I wanted to finish the assessment sooner.
