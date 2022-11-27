@@ -6,7 +6,7 @@ Link to the frontend's repo: https://github.com/hiluan/amber-frontend/
 
 Link to the backend's repo: https://github.com/hiluan/amber-backend/
 
-https://user-images.githubusercontent.com/76276426/204112564-a9927a0f-4e53-481e-8834-e2c0679b1ae7.mp4
+https://user-images.githubusercontent.com/76276426/204114364-f6e88bef-30a9-4481-a1aa-8a3b0cb5f5d3.mp4
 
 ## How It's Made:
 
@@ -39,7 +39,7 @@ https://user-images.githubusercontent.com/76276426/204112564-a9927a0f-4e53-481e-
 
 2. **Redux / Redux Toolkit**
 
-- I separate the global states into two slices: - `dbSlice.js` stores the whole data for later use without having to fetch it over and over again whenever I need it.- `recordsSlice.js` stores the values of the current chart and grid.
+- I separated the global states into two slices: - `dbSlice.js` stores the whole data for later use without having to fetch it over and over again whenever I need it.- `recordsSlice.js` stores the values of the current chart and grid.
 
 Responsive design: _View on Ipad mini_
 
@@ -90,7 +90,7 @@ _Data Grid and Pie Chart_
 
 - The background has a gradient animated effect to make the app more attractive.
 
-- By applying CSS tricks like using `max-height` to `container` that has auto height, and set `translateX` to chart's positions, I make sure the app flows seamlessly when new objects are added to the view of the user, responsively.
+- By applying CSS tricks like using `max-height` to `container` that has auto height, and set `translateX` to chart's positions, I made sure the app flows seamlessly when new objects are added to the view of the user, responsively.
 
 - Framer Motion from React libraries is used to make the appearance of the data grid and the radio button taps are more interesting and attractive.
   The cells of the data grid have the spaces needed to remain in their original form. For example,s when switching from "All" to "2015", the grid stays as it is without having to resize.
@@ -101,7 +101,7 @@ _Data Grid and Pie Chart_
 
 ## Optimizations
 
-All methods from class `Students` are O(n) of time complexity since I have to traverse through the whole dataset to get all the info I need. I used Hashmaps and arrays there to make sure the app run with O(1) of space complexity. Yet the app has O(n) of space complexity due to storing the whole dataset in the global state via Redux. The combination of both is acceptable performance.
+All methods from class `Students` are O(n) of time complexity since I had to traverse through the whole dataset to get all the info I needed. I used Hashmaps and arrays there to make sure the app run with O(1) of space complexity. Yet the app has O(n) of space complexity due to storing the whole dataset in the global state via Redux. The combination of both is acceptable performance.
 
 The array `colors` in `chart.js` needs to be a method that automatically generates more colors following the number of years in the dataset.
 
