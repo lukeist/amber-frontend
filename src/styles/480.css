@@ -49,3 +49,37 @@
     transform: translateX(0%) !important;
   }
 }
+
+/* @media screen and (max-width: 920px), screen and (max-height: 420px) {
+  #chart {
+    max-width: 50%;
+  }
+} */
+
+@media screen and (max-height: 420px) and (orientation: landscape) {
+  #container {
+    padding-bottom: 1rem !important;
+  }
+
+  #chart {
+    max-height: 22rem;
+  }
+
+  .table-striped {
+    margin-top: 0 !important;
+  }
+
+  .recharts-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #chart svg {
+    max-width: 60%;
+  }
+  .recharts-legend-wrapper {
+    /* padding-top: 5rem; */
+    margin-top: -5rem;
+  }
+}

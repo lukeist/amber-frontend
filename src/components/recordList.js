@@ -28,21 +28,6 @@ const Record = ({ record, length }) => (
     >
       {record.students}
     </td>
-    {/* // The commented code under is for editing the list after getting clarified*/}
-    {/* <td>
-    <Link className="btn btn-link" to={`/edit/${props.record._id}`}>
-      Edit
-    </Link>{" "}
-    |
-    <button
-      className="btn btn-link"
-      onClick={() => {
-        props.deleteRecord(props.record._id);
-      }}
-    >
-      Delete
-    </button>
-  </td> */}
   </motion.tr>
 );
 

@@ -3,9 +3,9 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { pushCourses, active } from "./store/recordsSlice";
 import { pushDb } from "./store/dbSlice";
-import Radio from "./components/radio";
-import Chart from "./components/chart";
-import RecordList from "./components/recordList";
+import Radio from "./components/Radio";
+import Chart from "./components/Chart";
+import RecordList from "./components/RecordList";
 import Students from "./components/_getStudents";
 
 function App() {
