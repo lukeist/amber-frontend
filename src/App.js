@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect, useState } from "react";
 import { pushCourses, active } from "./store/recordsSlice";
 import { pushDb } from "./store/dbSlice";
+import { BsInfoCircleFill, BsGithub } from "react-icons/bs";
 import Radio from "./components/radio";
 import Chart from "./components/chart";
 import RecordList from "./components/recordList";
@@ -59,14 +60,31 @@ function App() {
           </div>
         </div>
       ) : (
-        <div id="container" className={isGrid ? "w-grid" : "wo-grid"}>
-          <h3>{records.chartTitle}</h3>
-          <Radio years={years} />
-          <div>
-            <div id="container-chart-grid">
-              <Chart isGrid={isGrid} records={records} />
-              {isGrid ? <RecordList instructors={instructors} /> : <div></div>}
+        <div id="main-group">
+          <h3 id="main-title">Take-Home Assessment | Amber Kinetics</h3>
+
+          <div id="container" className={isGrid ? "w-grid" : "wo-grid"}>
+            <h3>{records.chartTitle}</h3>
+            <Radio years={years} />
+            <div>
+              <div id="container-chart-grid">
+                <Chart isGrid={isGrid} records={records} />
+                {isGrid ? (
+                  <RecordList instructors={instructors} />
+                ) : (
+                  <div></div>
+                )}
+              </div>
             </div>
+          </div>
+
+          <div id="main-subtitle">
+            <a href="https://drive.google.com/file/d/1mUcM3AopR9uPo8jyS4PiSD4alL0engUZ/view?usp=share_link">
+              <BsInfoCircleFill />
+            </a>
+            <a href="https://github.com/hiluan/amber-frontend">
+              <BsGithub />
+            </a>
           </div>
         </div>
       )}

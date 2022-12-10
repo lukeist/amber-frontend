@@ -34,8 +34,38 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100%;
   /* overflow: hidden; */
+}
+
+#main-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#main-title {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  color: rgba(255, 255, 255, 0.3);
+  z-index: 10;
+}
+
+#main-subtitle {
+  margin-top: 2rem;
+  font-size: 2.4rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+#main-subtitle a {
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0 0.5rem;
+}
+
+#main-subtitle a:hover {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #gradient-animator {

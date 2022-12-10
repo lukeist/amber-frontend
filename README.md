@@ -6,6 +6,8 @@ Link to the frontend's repo: https://github.com/hiluan/amber-frontend/
 
 Link to the backend's repo: https://github.com/hiluan/amber-backend/
 
+Link to the requirements: https://drive.google.com/file/d/1mUcM3AopR9uPo8jyS4PiSD4alL0engUZ/view?usp=share_link
+
 https://user-images.githubusercontent.com/76276426/204114364-f6e88bef-30a9-4481-a1aa-8a3b0cb5f5d3.mp4
 
 ## How It's Made:
