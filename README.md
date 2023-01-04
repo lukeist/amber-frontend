@@ -1,6 +1,6 @@
 # Amber Kinetics Inc UI/UX Engineer Assessment
 
-Link to project (hosted by AWS Amplify) https://main.d1w65l1v6fcr36.amplifyapp.com/
+Link to project: https://amber-frontend.vercel.app
 
 Link to the frontend's repo: https://github.com/hiluan/amber-frontend/
 
